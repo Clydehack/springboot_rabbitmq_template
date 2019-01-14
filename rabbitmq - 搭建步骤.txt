@@ -1,0 +1,29 @@
+变量名：ERLANG_HOME
+erlang的安装地址
+
+将%ERLANG_HOME%\bin;加入到path中
+
+输入erl，看到版本号就说明erlang安装成功
+
+
+安装rabbitmq-server-3.7.10.exe
+命令行cd，RabbitMQ的sbin目录
+然后rabbitmq-plugins enable rabbitmq_management命令安装
+
+打开sbin目录，双击rabbitmq-server.bat
+
+看到界面，访问http://localhost:15672
+
+用户名和密码都是guest
+
+
+然后安装rabbitmq_delayed_message_exchange插件,延时插件
+地址
+https://dl.bintray.com/rabbitmq/community-plugins/3.7.x/rabbitmq_delayed_message_exchange
+版本3.7.x
+
+将文件解压在rabbitmq刚才安装的路径下的plugins
+命令行cd，RabbitMQ的sbin目录
+rabbitmq-plugins enable rabbitmq_delayed_message_exchange
+
+成功后即可使用代码
